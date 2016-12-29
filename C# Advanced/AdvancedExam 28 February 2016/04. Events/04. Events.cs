@@ -25,7 +25,7 @@ namespace _04.Events
             for (int i = 0; i < n; i++)
             {
                 string input = Console.ReadLine();
-                var match = Regex.Match(input, "#([a-zA-Z]{1,}):\\s*@([a-zA-Z]{1,})\\s*([0-2]?[0-9]):([0-5]?[0-9])");
+                var match = Regex.Match(input, "^#([a-zA-Z]{1,}):\\s*@([a-zA-Z]{1,})\\s*([0-2]?[0-9]):([0-5]?[0-9])$");
 
                 if (match.Success)
                 {
