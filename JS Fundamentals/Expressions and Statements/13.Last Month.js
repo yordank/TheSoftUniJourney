@@ -17,4 +17,3 @@ function lastMonth([day,month,year]){
 
 }
 
- 
