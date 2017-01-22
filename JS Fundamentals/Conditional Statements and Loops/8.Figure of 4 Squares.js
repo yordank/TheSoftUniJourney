@@ -8,7 +8,7 @@ function figureOf4Squares([num]){
 
     if(num==2)
     {
-        console.log('+');
+        console.log('+++');
         return;
     }
 
@@ -66,5 +66,5 @@ function figureOf4Squares([num]){
 
 }
 
-figureOf4Squares(['2']);
+
 
