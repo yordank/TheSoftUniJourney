@@ -1,7 +1,9 @@
---Problem 16.	Employees Count Salaries
---Count the salaries of all employees who don’t have a manager.
+--Problem 15.	Employees Maximum Salaries
+--Find the max salary for each department. Filter those which have max salaries not in the range 30000 and 70000;
+--Example:
 
-SELECT COUNT(*)
-  FROM Employees AS Count
- WHERE ManagerID IS NULL
-   
+SELECT DepartmentID,
+       MAX(Salary) AS MaxSalaries
+  FROM Employees
+ GROUP BY DepartmentID
+ HAVING Max(Salary) NOT BETWEEN 30000 AND 70000

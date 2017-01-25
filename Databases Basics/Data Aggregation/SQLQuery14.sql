@@ -1,19 +1,10 @@
---Problem 14.	Employees Average Salaries
---Select all employees who earn more than 30000 into a new table. Then delete all employees who has ManagerID = 42; Then increase the salaries of all employees with DepartmentID=1 with 5000. Finally, select the average salaries in each department.
+--Problem 13.	Employees Minimum Salaries
+--That’s it! You no longer work for Mr. Bodrog. You have decided to find a proper job as an analyst in SoftUni. 
+--It’s not a surprise that you will use the SoftUni database. Things get more exciting here!
+--Select the minimum salary from the employees for departments with ID (2,5,7) but only for those who are hired after 01/01/2000.
 
-SELECT *
-  INTO Employees2
+SELECT DepartmentID,MIN(Salary)
   FROM Employees
-  WHERE Salary>30000
-  
-DELETE 
-FROM Employees2
-WHERE ManagerID=42
-
-UPDATE Employees2
-SET Salary+=5000
-WHERE DepartmentID=1
-
-SELECT DepartmentID,AVG(Salary)
-FROM Employees2
-GROUP BY DepartmentID
+  WHERE DepartmentID IN (2,5,7) AND
+        HireDate>'2000-01-01'
+ GROUP BY DepartmentID 
