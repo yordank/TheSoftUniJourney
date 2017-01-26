@@ -1,9 +1,9 @@
 /**
  * Created by ADMIN on 26.1.2017 г..
  */
-function spiral([rows,cols]){
+function spiral([rowscols]){
 
-    [rows,cols]=[rows,cols].map(Number);
+    let [rows,cols]=rowscols.split(' ').map(Number);
 
     let count=rows*cols;
 
@@ -14,34 +14,39 @@ function spiral([rows,cols]){
     let curRow=0;
     let curCol=rows-1;
 
+    let matrix=[[]];
 
-    
+
+    for (let i = 0; i < rows; i++) {
+        matrix[i]=[];
+
+    }
 
 
     let value=1;
 
     for (let i = 0; i <= m-1; i++) {
 
-        for (let j  = 0; j < cols-i; j++) {
+        for (let j  = i; j < cols-i; j++) {
 
             matrix[curRow][j]=value;
             value++;
 
         }
 
-        for (let j  = 1; j < rows-i; j++) {
+        for (let j  = 1+i; j < rows-i; j++) {
             matrix[j][curCol]=value;
             value++;
 
         }
 
-        for (let j  = cols-2; j >=i; j--) {
+        for (let j  = cols-2-i; j >=i; j--) {
             matrix[rows-1-curRow][j]=value;
             value++;
 
         }
 
-        for (let j  = rows-2; j >=i+1; j--) {
+        for (let j  = rows-2-i; j >=i+1; j--) {
             matrix[j][cols-1-curCol]=value;
             value++;
 
@@ -51,7 +56,7 @@ function spiral([rows,cols]){
         curCol--;
 
     }
-let a=5;
+    matrix.forEach(x=>console.log(x.join(' ')))
 }
 
-spiral(['4','4'])
+//spiral(['3 3'])
