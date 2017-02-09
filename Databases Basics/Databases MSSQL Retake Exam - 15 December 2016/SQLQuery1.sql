@@ -1,0 +1,51 @@
+CREATE TABLE Locations
+(
+Id INT PRIMARY KEY IDENTITY CHECK (Id>=0),
+Latitude FLOAT,
+Longitude FLOAT
+)
+CREATE Table Credentials
+(
+
+Id INT PRIMARY KEY IDENTITY CHECK (Id>=0),
+Email NVARCHAR(30),
+Password NVARCHAR(20)
+)
+CREATE TABLE Chats
+(
+Id INT PRIMARY KEY IDENTITY CHECK (Id>=0),
+Title NVARCHAR(32),
+StartDate DATE,
+IsActive BIT
+)
+CREATE TABLE Users
+(
+Id INT PRIMARY KEY IDENTITY CHECK (Id>=0),
+Nickname NVARCHAR(25),
+Gender CHAR CHECK (Gender IN ('M','F')),
+Age INT CHECK (Age>=0),
+LocationId INT CHECK (LocationId>=0) ,
+CredentialId INT UNIQUE CHECK (CredentialId>=0),
+FOREIGN KEY (LocationId) REFERENCES Locations(Id),
+FOREIGN KEY (CredentialId) REFERENCES Credentials(Id)
+)
+CREATE TABLE Messages 
+(
+Id INT PRIMARY KEY IDENTITY CHECK (Id>=0),
+Content NVARCHAR(200),
+SentOn DATE,
+ChatId INT CHECK (ChatId>=0),
+UserId INT CHECK (UserId>=0),
+FOREIGN KEY (ChatId) REFERENCES Chats(Id),
+FOREIGN KEY (UserId) REFERENCES Users(Id)
+
+)
+CREATE TABLE UsersChats
+(
+UserId INT CHECK (UserId>=0),
+ChatId INT CHECK (ChatId>=0),
+FOREIGN KEY (ChatId) REFERENCES Chats(Id),
+FOREIGN KEY (UserId) REFERENCES Users(Id),
+PRIMARY KEY (UserId,ChatId)
+
+)
