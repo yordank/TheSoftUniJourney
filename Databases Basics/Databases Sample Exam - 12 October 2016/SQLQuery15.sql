@@ -1,0 +1,9 @@
+CREATE FUNCTION udf_ConcatString (@str1 VARCHAR(8000),@str2 VARCHAR(8000))
+RETURNS VARCHAR(8000)
+AS
+BEGIN
+  DECLARE @result VARCHAR(200)=CONCAT(REVERSE(@str1),REVERSE(@str2))
+  RETURN @result
+END
+
+--SELECT DBO.udf_ConcatString('','')
