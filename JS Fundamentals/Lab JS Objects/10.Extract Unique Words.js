@@ -10,3 +10,5 @@ function extractWords(inputSentences) {
     }
     console.log([...words.values()].join(", "));
 }
+//extractWords(['JS and Node.js', 'JS again and again', 'Oh, JS?'])
+
