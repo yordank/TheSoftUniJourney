@@ -16,7 +16,7 @@ Price MONEY CHECK(Price >=0)
 CREATE TABLE Distributors
 (
 Id INT PRIMARY KEY IDENTITY CHECK(Id>=0),
-Name NVARCHAR(25),
+Name NVARCHAR(25) UNIQUE,
 AddressText NVARCHAR(30),
 Summary NVARCHAR(200),
 CountryId INT CHECK(CountryId>=0),
