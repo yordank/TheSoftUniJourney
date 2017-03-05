@@ -23,10 +23,7 @@ namespace _11.Get_Users_by_Email_Provider
 
         }
 
-        static bool isMatched(string value,string input)
-        {
-            return true;
-        }
+      
 
 
     }
