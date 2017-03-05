@@ -1,0 +1,10 @@
+C:\Users\ADMIN\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\8. Create User\bin\Debug\_8.Create_User.exe.config
+C:\Users\ADMIN\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\8. Create User\bin\Debug\_8.Create_User.exe
+C:\Users\ADMIN\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\8. Create User\bin\Debug\_8.Create_User.pdb
+C:\Users\ADMIN\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\8. Create User\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\8. Create User\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\8. Create User\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\8. Create User\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\8. Create User\obj\Debug\8. Create User.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\8. Create User\obj\Debug\_8.Create_User.exe
+C:\Users\ADMIN\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\8. Create User\obj\Debug\_8.Create_User.pdb
