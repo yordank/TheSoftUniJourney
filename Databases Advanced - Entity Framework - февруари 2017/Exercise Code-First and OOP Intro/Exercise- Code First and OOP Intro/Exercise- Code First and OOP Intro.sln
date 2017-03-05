@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Define a class Person", "1. Define a class Person\1. Define a class Person.csproj", "{04C06438-8343-4051-94F6-F037E44A98C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Create Person Constructors", "2. Create Person Constructors\2. Create Person Constructors.csproj", "{3269D6BE-6068-4567-B893-A6AE0E7F4009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Oldest Family Member", "3. Oldest Family Member\3. Oldest Family Member.csproj", "{80BE0E9B-1B2B-4C89-BB9C-5571E46DCAD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Students", "4. Students\4. Students.csproj", "{22F0B14D-BD2D-4A9E-9BDB-5C10F170807B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Planck Constant", "5. Planck Constant\5. Planck Constant.csproj", "{B463A46A-9129-45F0-BA9F-EE65AF9AB26B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Math Utilities", "6. Math Utilities\6. Math Utilities.csproj", "{8F5F5F0E-5B46-46D9-99A0-4DF74122AA2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04C06438-8343-4051-94F6-F037E44A98C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C06438-8343-4051-94F6-F037E44A98C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C06438-8343-4051-94F6-F037E44A98C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C06438-8343-4051-94F6-F037E44A98C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3269D6BE-6068-4567-B893-A6AE0E7F4009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3269D6BE-6068-4567-B893-A6AE0E7F4009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3269D6BE-6068-4567-B893-A6AE0E7F4009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3269D6BE-6068-4567-B893-A6AE0E7F4009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80BE0E9B-1B2B-4C89-BB9C-5571E46DCAD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80BE0E9B-1B2B-4C89-BB9C-5571E46DCAD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80BE0E9B-1B2B-4C89-BB9C-5571E46DCAD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80BE0E9B-1B2B-4C89-BB9C-5571E46DCAD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F0B14D-BD2D-4A9E-9BDB-5C10F170807B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F0B14D-BD2D-4A9E-9BDB-5C10F170807B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F0B14D-BD2D-4A9E-9BDB-5C10F170807B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F0B14D-BD2D-4A9E-9BDB-5C10F170807B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B463A46A-9129-45F0-BA9F-EE65AF9AB26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B463A46A-9129-45F0-BA9F-EE65AF9AB26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B463A46A-9129-45F0-BA9F-EE65AF9AB26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B463A46A-9129-45F0-BA9F-EE65AF9AB26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F5F5F0E-5B46-46D9-99A0-4DF74122AA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F5F5F0E-5B46-46D9-99A0-4DF74122AA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F5F5F0E-5B46-46D9-99A0-4DF74122AA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F5F5F0E-5B46-46D9-99A0-4DF74122AA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

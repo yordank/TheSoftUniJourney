@@ -1,0 +1,5 @@
+c:\users\admin\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\5. Planck Constant\bin\Debug\_5.Planck_Constant.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\5. Planck Constant\bin\Debug\_5.Planck_Constant.exe
+c:\users\admin\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\5. Planck Constant\bin\Debug\_5.Planck_Constant.pdb
+c:\users\admin\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\5. Planck Constant\obj\Debug\_5.Planck_Constant.exe
+c:\users\admin\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\5. Planck Constant\obj\Debug\_5.Planck_Constant.pdb
