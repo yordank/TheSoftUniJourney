@@ -40,28 +40,30 @@ namespace _7.Gringotts_Database
                 IsDepositExpired = false
             };
 
-            var context = new GringottsContext();
+          
 
-            try
+            using (var context = new GringottsContext())
             {
-                //context.wizardDeposit.Add(new WizardDeposit() { LastName = "Ivanov", Age = 29 });
-                context.wizardDeposit.Add(astor);
-                context.wizardDeposit.Add(doubledore);
-
-                context.SaveChanges();
-            }
-
-            catch (DbEntityValidationException dbEx)
-            {
-                foreach (var validationErrors in dbEx.EntityValidationErrors)
+                try
                 {
-                    foreach (var validationError in validationErrors.ValidationErrors)
+                    //context.wizardDeposit.Add(new WizardDeposit() { LastName = "Ivanov", Age = 29 });
+                    context.wizardDeposit.Add(astor);
+                    context.wizardDeposit.Add(doubledore);
+
+                    context.SaveChanges();
+                }
+
+                catch (DbEntityValidationException dbEx)
+                {
+                    foreach (var validationErrors in dbEx.EntityValidationErrors)
                     {
-                        System.Console.WriteLine("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
+                        foreach (var validationError in validationErrors.ValidationErrors)
+                        {
+                            System.Console.WriteLine("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
+                        }
                     }
                 }
             }
-
         }
     }
 }

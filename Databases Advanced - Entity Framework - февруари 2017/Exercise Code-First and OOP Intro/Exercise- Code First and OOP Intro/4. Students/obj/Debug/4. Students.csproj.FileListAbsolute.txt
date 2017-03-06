@@ -3,3 +3,4 @@ c:\users\admin\documents\visual studio 2015\Projects\Exercise- Code First and OO
 c:\users\admin\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\4. Students\bin\Debug\_4.Students.pdb
 c:\users\admin\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\4. Students\obj\Debug\_4.Students.exe
 c:\users\admin\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\4. Students\obj\Debug\_4.Students.pdb
+C:\Users\ADMIN\documents\visual studio 2015\Projects\Exercise- Code First and OOP Intro\4. Students\obj\Debug\4. Students.csprojResolveAssemblyReference.cache

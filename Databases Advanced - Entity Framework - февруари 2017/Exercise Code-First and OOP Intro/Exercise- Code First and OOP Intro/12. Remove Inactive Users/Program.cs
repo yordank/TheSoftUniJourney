@@ -12,25 +12,29 @@ namespace _12.Remove_Inactive_Users
         static void Main(string[] args)
         {
             DateTime date = DateTime.Parse(Console.ReadLine());
-            var context = new UserContext();
 
-            int deletedUsers = 0;
-
-            foreach (var u in context.Users.Where(x=>x.LastTimeLoggedIn<date && x.IsDeleted==false).ToList())
+            using (var context = new UserContext())
             {
-                u.IsDeleted = true;
 
-                context.Users.Attach(u);
-                context.Entry(u).State = EntityState.Modified;
-                deletedUsers++;
+                int deletedUsers = 0;
+
+                foreach (var u in context.Users.Where(x => x.LastTimeLoggedIn < date && x.IsDeleted == false).ToList())
+                {
+                    u.IsDeleted = true;
+
+                    context.Users.Attach(u);
+                    context.Entry(u).State = EntityState.Modified;
+                    deletedUsers++;
+                    context.Users.Remove(u);
+                }
+
+                context.SaveChanges();
+
+
+                string res = (deletedUsers == 0) ? "No" : deletedUsers.ToString();
+
+                Console.WriteLine($"{res} users have been deleted");
             }
-
-            context.SaveChanges();
-
-            string res = (deletedUsers == 0) ? "No" : deletedUsers.ToString();
-
-            Console.WriteLine($"{res} users have been deleted");
-            
         }
     }
 }
