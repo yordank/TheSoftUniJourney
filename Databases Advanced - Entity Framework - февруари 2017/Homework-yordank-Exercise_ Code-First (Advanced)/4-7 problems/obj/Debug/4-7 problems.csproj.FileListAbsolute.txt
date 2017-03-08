@@ -1,0 +1,15 @@
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\bin\Debug\4-7 problems.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\bin\Debug\4-7 problems.exe
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\bin\Debug\4-7 problems.pdb
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\bin\Debug\EntityFramework.dll
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\bin\Debug\EntityFramework.xml
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\obj\Debug\4-7 problems.exe
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\obj\Debug\4-7 problems.pdb
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\obj\Debug\4-7 problems.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\obj\Debug\_4_7_problems.Migrations.ProductsAddColumnDescription.resources
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\obj\Debug\4-7 problems.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\obj\Debug\_4_7_problems.Migrations.SalesAddDateDefault.resources
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\obj\Debug\_4_7_problems.Migrations.Add_Default_Age.resources
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Code First\4-7 problems\obj\Debug\_4_7_problems.Migrations.FirstNameLastName.resources
