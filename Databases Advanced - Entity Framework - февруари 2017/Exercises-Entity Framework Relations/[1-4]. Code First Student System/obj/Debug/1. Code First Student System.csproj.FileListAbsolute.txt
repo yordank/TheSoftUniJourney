@@ -1,0 +1,1 @@
+c:\users\admin\documents\visual studio 2015\Projects\Exercises-Entity Framework Relations\1. Code First Student System\bin\Debug\_1.Code_First_Student_System.exe.config

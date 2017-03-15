@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[1-4]. Code First Student System", "[1-4]. Code First Student System\[1-4]. Code First Student System.csproj", "{682B1205-4A67-4E0B-AF0E-326C7FCACE72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photographers", "Photographers\Photographers.csproj", "{7223B30E-89FB-4310-A6DC-50F945BE5F70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{682B1205-4A67-4E0B-AF0E-326C7FCACE72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682B1205-4A67-4E0B-AF0E-326C7FCACE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682B1205-4A67-4E0B-AF0E-326C7FCACE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682B1205-4A67-4E0B-AF0E-326C7FCACE72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7223B30E-89FB-4310-A6DC-50F945BE5F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7223B30E-89FB-4310-A6DC-50F945BE5F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7223B30E-89FB-4310-A6DC-50F945BE5F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7223B30E-89FB-4310-A6DC-50F945BE5F70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

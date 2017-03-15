@@ -1,0 +1,12 @@
+C:\Users\ADMIN\Documents\visual studio 2015\Projects\Exercises-Entity Framework Relations\[1-4]. Code First Student System\bin\Debug\_1.Code_First_Student_System.exe.config
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\Exercises-Entity Framework Relations\[1-4]. Code First Student System\bin\Debug\_1.Code_First_Student_System.exe
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\Exercises-Entity Framework Relations\[1-4]. Code First Student System\bin\Debug\_1.Code_First_Student_System.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\Exercises-Entity Framework Relations\[1-4]. Code First Student System\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\Exercises-Entity Framework Relations\[1-4]. Code First Student System\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\Exercises-Entity Framework Relations\[1-4]. Code First Student System\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\Exercises-Entity Framework Relations\[1-4]. Code First Student System\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\Exercises-Entity Framework Relations\[1-4]. Code First Student System\obj\Debug\[1-4]. Code First Student System.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\Exercises-Entity Framework Relations\[1-4]. Code First Student System\obj\Debug\_1.Code_First_Student_System.exe
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\Exercises-Entity Framework Relations\[1-4]. Code First Student System\obj\Debug\_1.Code_First_Student_System.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\Exercises-Entity Framework Relations\[1-4]. Code First Student System\obj\Debug\_1.Code_First_Student_System.Migrations.AddLicenses.resources
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\Exercises-Entity Framework Relations\[1-4]. Code First Student System\obj\Debug\[1-4]. Code First Student System.csproj.GenerateResource.Cache

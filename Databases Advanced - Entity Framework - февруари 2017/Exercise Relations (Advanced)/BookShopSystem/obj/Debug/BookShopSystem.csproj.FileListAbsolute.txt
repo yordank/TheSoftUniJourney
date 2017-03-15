@@ -1,0 +1,10 @@
+c:\users\admin\documents\visual studio 2015\Projects\BookShopSystem\BookShopSystem\bin\Debug\BookShopSystem.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\BookShopSystem\BookShopSystem\bin\Debug\BookShopSystem.exe
+c:\users\admin\documents\visual studio 2015\Projects\BookShopSystem\BookShopSystem\bin\Debug\BookShopSystem.pdb
+c:\users\admin\documents\visual studio 2015\Projects\BookShopSystem\BookShopSystem\bin\Debug\EntityFramework.dll
+c:\users\admin\documents\visual studio 2015\Projects\BookShopSystem\BookShopSystem\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\admin\documents\visual studio 2015\Projects\BookShopSystem\BookShopSystem\bin\Debug\EntityFramework.xml
+c:\users\admin\documents\visual studio 2015\Projects\BookShopSystem\BookShopSystem\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\admin\documents\visual studio 2015\Projects\BookShopSystem\BookShopSystem\obj\Debug\BookShopSystem.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\BookShopSystem\BookShopSystem\obj\Debug\BookShopSystem.exe
+c:\users\admin\documents\visual studio 2015\Projects\BookShopSystem\BookShopSystem\obj\Debug\BookShopSystem.pdb
