@@ -1,0 +1,5 @@
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Models\bin\Debug\EmployeesApp.Models.dll
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Models\bin\Debug\EmployeesApp.Models.pdb
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Models\obj\Debug\EmployeesApp.Models.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Models\obj\Debug\EmployeesApp.Models.dll
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Models\obj\Debug\EmployeesApp.Models.pdb

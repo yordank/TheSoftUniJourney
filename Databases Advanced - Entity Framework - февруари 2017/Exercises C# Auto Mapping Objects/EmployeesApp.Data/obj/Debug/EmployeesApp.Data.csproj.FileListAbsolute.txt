@@ -1,0 +1,12 @@
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Data\bin\Debug\EmployeesApp.Data.dll.config
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Data\bin\Debug\EmployeesApp.Data.dll
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Data\bin\Debug\EmployeesApp.Data.pdb
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Data\bin\Debug\EmployeesApp.Models.dll
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Data\bin\Debug\EntityFramework.dll
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Data\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Data\bin\Debug\EmployeesApp.Models.pdb
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Data\bin\Debug\EntityFramework.xml
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Data\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Data\obj\Debug\EmployeesApp.Data.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Data\obj\Debug\EmployeesApp.Data.dll
+c:\users\admin\documents\visual studio 2015\Projects\Auto Mapping Objects\EmployeesApp.Data\obj\Debug\EmployeesApp.Data.pdb
