@@ -51,7 +51,7 @@ public class DoublyLinkedList<T> : IEnumerable<T>
         else
         {
             var newTail = new ListNode<T>(element);
-            newTail.PrevNode = this.Tail.PrevNode;
+            newTail.PrevNode = this.Tail;
             newTail.NextNode = null;
             this.Tail.NextNode = newTail;
             this.Tail = newTail;
@@ -99,12 +99,14 @@ public class DoublyLinkedList<T> : IEnumerable<T>
 
         if(this.Tail!=null)
         {
+            this.Tail.NextNode.PrevNode = null;
             this.Tail.NextNode = null;
+           
         }
         
         else
         {
-            this.Head = null;
+            this.Tail = null;
         }
 
         this.Count--;
@@ -173,6 +175,7 @@ class Example
         list.AddFirst(3);
         list.AddFirst(2);
         list.AddLast(10);
+        list.AddLast(12);
         Console.WriteLine("Count = {0}", list.Count);
 
         list.ForEach(Console.WriteLine);
@@ -186,7 +189,7 @@ class Example
         Console.WriteLine("--------------------");
 
         list.RemoveLast();
-
+        //list.RemoveFirst();
         list.ForEach(Console.WriteLine);
         Console.WriteLine("--------------------");
     }
