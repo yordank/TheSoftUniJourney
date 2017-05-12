@@ -1,0 +1,5 @@
+C:\Users\ADMIN\Desktop\MySoftUniJourney\TheSoftUniJourney\Data Structures-february2016\2. Doubly-Linked-List\DoublyLinkedList\bin\Debug\DoublyLinkedList.exe
+C:\Users\ADMIN\Desktop\MySoftUniJourney\TheSoftUniJourney\Data Structures-february2016\2. Doubly-Linked-List\DoublyLinkedList\bin\Debug\DoublyLinkedList.pdb
+C:\Users\ADMIN\Desktop\MySoftUniJourney\TheSoftUniJourney\Data Structures-february2016\2. Doubly-Linked-List\DoublyLinkedList\obj\Debug\DoublyLinkedList.exe
+C:\Users\ADMIN\Desktop\MySoftUniJourney\TheSoftUniJourney\Data Structures-february2016\2. Doubly-Linked-List\DoublyLinkedList\obj\Debug\DoublyLinkedList.pdb
+C:\Users\ADMIN\Desktop\MySoftUniJourney\TheSoftUniJourney\Data Structures-february2016\2. Doubly-Linked-List\DoublyLinkedList\obj\Debug\DoublyLinkedList.csprojResolveAssemblyReference.cache

@@ -69,10 +69,12 @@ public class DoublyLinkedList<T> : IEnumerable<T>
         }
 
         var firstElement = this.Head.Value;
+
         this.Head = this.Head.NextNode;
 
         if(this.Head!=null)
         {
+            this.Head.PrevNode.NextNode=null;
             this.Head.PrevNode = null;
         }
 
@@ -80,6 +82,7 @@ public class DoublyLinkedList<T> : IEnumerable<T>
         {
             this.Tail = null;
         }
+
         this.Count--;
 
         return firstElement;
@@ -99,14 +102,14 @@ public class DoublyLinkedList<T> : IEnumerable<T>
 
         if(this.Tail!=null)
         {
-            this.Tail.NextNode.PrevNode = null;
+          //  this.Tail.NextNode.PrevNode = null;
             this.Tail.NextNode = null;
            
         }
         
         else
         {
-            this.Tail = null;
+            this.Head = null;
         }
 
         this.Count--;
