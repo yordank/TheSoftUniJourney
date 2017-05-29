@@ -77,7 +77,7 @@ using System.Threading.Tasks;
         {
             T[] arr = new T[Count];
 
-            var node = new QueueNode<T>();
+            var node = Head;
 
             for (int i = 0; i < this.Count; i++)
             {
