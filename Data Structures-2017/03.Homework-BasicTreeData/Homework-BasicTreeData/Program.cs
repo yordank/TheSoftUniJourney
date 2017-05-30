@@ -15,7 +15,28 @@ namespace Homework_BasicTreeData
             ReadTree();
 
             //Problem1();
-            Problem2();
+            //Problem2();
+            //Problem3();
+            Problem4();
+        }
+
+        private static void Problem4()
+        {
+            var nodes = nodeByValue
+                .Where(x => x.Value.Parent!=null && x.Value.Children.Count()!=0)
+                .Select(x => x.Key)
+                .ToList()
+                .OrderBy(x => x);
+
+            Console.WriteLine($"Middle nodes: {string.Join(" ", nodes)}");
+        }
+
+        private static void Problem3()
+        {
+            var nodes = nodeByValue.Where(x => x.Value.Children.Count() == 0).Select(x=>x.Key).ToList().OrderBy(x=>x);
+
+            Console.WriteLine($"Leaf nodes: {string.Join(" ",nodes)}");
+
         }
 
         private static void Problem2()
@@ -48,7 +69,7 @@ namespace Homework_BasicTreeData
             Tree<int> childNode = GetTreeNodeByValue(child);
 
             parentNode.Children.Add(childNode);
-             
+            childNode.Parent = parentNode;
 
         }
 
