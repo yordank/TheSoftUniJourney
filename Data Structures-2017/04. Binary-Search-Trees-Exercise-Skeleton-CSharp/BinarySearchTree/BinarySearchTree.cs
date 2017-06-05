@@ -30,6 +30,33 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
         return current;
     }
 
+    private Node FindParent(T element)
+    {
+        Node current = this.root;
+
+        Node parent=null;
+
+        while (current != null)
+        {
+            if (current.Value.CompareTo(element) > 0)
+            {
+                parent = current;
+                current = current.Left;
+            }
+            else if (current.Value.CompareTo(element) < 0)
+            {
+                parent = current;
+                current = current.Right;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        return parent;
+    }
+
     private void PreOrderCopy(Node node)
     {
         if (node == null)
@@ -172,6 +199,7 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
 
     private Node DeleteMin(Node node)
     {
+
         if (node.Left == null)
         {
             return node.Right;
@@ -196,7 +224,42 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
 
     public void Delete(T element)
     {
-        throw new NotImplementedException();
+        if (this.root == null)
+        {
+            throw new InvalidOperationException("Tree is empty");
+        }
+
+         
+
+        var cuurentNode = this.root;
+
+        var parentNode = this.FindParent(element);
+
+        var node = this.FindElement(element);
+
+        if (node.Left == null && node.Right==null)
+        {
+            if (parentNode == null)
+            {
+                this.root = null;
+            }
+
+            else
+            {
+                if (parentNode.Left.Value.CompareTo(element) == 0)
+                {
+                    parentNode.Left = null;
+                }
+
+                else if (parentNode.Right.Value.CompareTo(element) == 0)
+                {
+                    parentNode.Right = null;
+                }
+
+            }
+
+        }
+
     }
 
     public void DeleteMax()
@@ -352,6 +415,10 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
 
     public T Ceiling(T element)
     {
+        if (this.root == null)
+        {
+            throw new InvalidOperationException("Tree is empty");
+        }
 
         Node current = this.root;
 
@@ -412,7 +479,10 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
 
     public T Floor(T element)
     {
-        
+        if (this.root == null)
+        {
+            throw new InvalidOperationException("Tree is empty");
+        }
 
         Node current = this.root;
 
@@ -464,7 +534,7 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
         //}
     }
 
-    private class Node
+    public class Node
     {
         public Node(T value)
         {
@@ -496,10 +566,19 @@ public class Launcher
 
         //test4(bst);
 
+        //test5(bst);
+
+        bst.Delete(1);
+
+        bst.EachInOrder(Console.WriteLine);
+
+    }
+
+    private static void test5(BinarySearchTree<int> bst)
+    {
         int ceiling = bst.Ceiling(4);
 
         Console.WriteLine(ceiling);
-
     }
 
     private static void test4(BinarySearchTree<int> bst)
