@@ -197,6 +197,17 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
 
     }
 
+    private Node FindMin(Node node)
+    {
+
+        if (node.Left == null)
+            return node;
+
+        return FindMin(node.Left);
+
+    }
+
+
     private Node DeleteMin(Node node)
     {
 
@@ -229,13 +240,19 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
             throw new InvalidOperationException("Tree is empty");
         }
 
+      
          
 
-        var cuurentNode = this.root;
+        var node = this.FindElement(element);
+
+        if (node == null)
+        {
+            return;
+        }
 
         var parentNode = this.FindParent(element);
 
-        var node = this.FindElement(element);
+        
 
         if (node.Left == null && node.Right==null)
         {
@@ -259,6 +276,59 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
             }
 
         }
+
+        else if (node.Left != null && node.Right == null)
+        {
+            parentNode.Left = node.Left;
+        }
+        else if (node.Right != null && node.Right.Left == null)
+        {
+
+
+            if (parentNode == null)
+            {
+                node.Right.Left = root.Left;
+                this.root = node.Right;
+            }
+
+            else if (parentNode.Left.Value.CompareTo(node.Value) == 0)
+            {
+                node.Right.Left = node.Left;
+                parentNode.Left = node.Right;
+
+            }
+
+            else if (parentNode.Right.Value.CompareTo(node.Value) == 0)
+            {
+                node.Right.Left = node.Left;
+                parentNode.Right = node.Right;
+
+            }
+
+          
+
+
+        }
+        else if (node.Right != null && node.Right.Left != null)
+        {
+            var nodeMin = this.FindMin(node.Right);
+
+            this.Delete(nodeMin.Value); 
+
+            nodeMin.Left = node.Left;
+
+            nodeMin.Right = node.Right;
+
+            var parent = this.FindParent(node.Value);
+
+            if (parent.Left.Value.CompareTo(element) == 0)
+            {
+                parent.Left = nodeMin;
+            }
+            else
+                parent.Right = nodeMin;
+        }
+
 
     }
 
@@ -384,6 +454,15 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
 
     public T Select(int rank)
     {
+        if (this.root == null)
+        {
+            throw new InvalidOperationException("tree is empty");
+        }
+
+        if (rank > this.Count() - 1 || rank < 0)
+        {
+            throw new InvalidOperationException();
+        }
         var current = this.root;
 
         while (current != null)
@@ -415,7 +494,8 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
 
     public T Ceiling(T element)
     {
-        if (this.root == null)
+
+        if (this.root == null || this.Rank(element)==this.Count()-1)
         {
             throw new InvalidOperationException("Tree is empty");
         }
@@ -568,7 +648,9 @@ public class Launcher
 
         //test5(bst);
 
-        bst.Delete(1);
+        bst.Delete(5);
+
+        
 
         bst.EachInOrder(Console.WriteLine);
 
@@ -628,7 +710,11 @@ public class Launcher
         bst.Insert(8);
         bst.Insert(9);
         bst.Insert(37);
+        bst.Insert(31);
         bst.Insert(39);
         bst.Insert(45);
+        bst.Insert(6);
+
+        int a = 5;
     }
 }
