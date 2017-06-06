@@ -1,0 +1,38 @@
+1: using System;
+2: using System.Collections.Generic;
+3: using System.IO;
+4: using System.Linq;
+5: using System.Text;
+6: using System.Threading.Tasks;
+7: 
+8: namespace Problem_2.Line_Numbers
+9: {
+10:     class Program
+11:     {
+12:         static void Main(string[] args)
+13:         {
+14:             using (var reader = new StreamReader("../../Program.cs"))
+15:             {
+16:                 using (var writer = new StreamWriter("../../Lines.txt"))
+17:                 {
+18:                     string line = reader.ReadLine();
+19: 
+20:                     int lineNumber = 1;
+21: 
+22:                     while (line != null)
+23:                     {
+24:                        
+25:                         writer.Write($"{lineNumber}: {line}");
+26:                       
+27:                         writer.WriteLine();
+28: 
+29:                         line = reader.ReadLine();
+30: 
+31:                         lineNumber++;
+32: 
+33:                     }
+34:                 }
+35:             }
+36:         }
+37:     }
+38: }
