@@ -168,29 +168,7 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
 
         }
 
-        //if (this.root == null)
-        //{
-        //    return;
-        //}
-
-        //Node current = this.root;
-
-        //Node parent = null;
-
-        //while (current.Left != null)
-        //{
-        //    parent = current;
-        //    current = current.Left;
-        //}
-
-        //if (parent == null)
-        //{
-        //    this.root = this.root.Right;
-        //}
-        //else
-        //{
-        //    parent.Left = current.Right;
-        //}
+        
 
         this.root = this.DeleteMin(this.root);
 
