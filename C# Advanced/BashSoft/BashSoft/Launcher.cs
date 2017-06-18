@@ -10,7 +10,13 @@ namespace BashSoft
     {
         static void Main(string[] args)
         {
-            IOManager.TraverseDirectory(@"C:\Users\ADMIN\Desktop\MySoftUniJourney\TheSoftUniJourney\C# Advanced\BashSoft");
+            //IOManager.TraverseDirectory(@"C:\");
+
+            //StudentsRepository.InitializedData();
+            //StudentsRepository.GetAllStudentsFromCourse("Unity");
+
+            StudentsRepository.InitializedData();
+            StudentsRepository.GetStudentScoresFromCource( "Unity","Ivan");
         }
     }
 }
