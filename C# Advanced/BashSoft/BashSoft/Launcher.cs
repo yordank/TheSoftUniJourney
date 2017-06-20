@@ -12,15 +12,7 @@ namespace BashSoft
         {
             
 
-            //StudentsRepository.InitializedData();
-            //StudentsRepository.GetAllStudentsFromCourse("Unity");
-
-            //StudentsRepository.InitializedData();
-            //StudentsRepository.GetStudentScoresFromCource( "Unity","Ivan");
-            //IOManager.ChangeCurrentDirectoryAbsolute(@"C:\");
-            //IOManager.TraverseDirectory(0);
-
-            //InputReader.StartReadingCommands();
+             
 
             InputReader.StartReadingCommands();
 

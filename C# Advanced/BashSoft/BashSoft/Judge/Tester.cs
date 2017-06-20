@@ -16,7 +16,7 @@ namespace SimpleJudge
 
             try
             {
-                string mismatchPath = GetMismatchPath(expectedOutputPath);
+                string mismatchPath = GetMismatchPath(SessionData.currentPath+expectedOutputPath);
 
                 string[] actualOutputLines = File.ReadAllLines(userOutputPath);
 
