@@ -10,13 +10,20 @@ namespace BashSoft
     {
         static void Main(string[] args)
         {
-            //IOManager.TraverseDirectory(@"C:\");
+            
 
             //StudentsRepository.InitializedData();
             //StudentsRepository.GetAllStudentsFromCourse("Unity");
 
-            StudentsRepository.InitializedData();
-            StudentsRepository.GetStudentScoresFromCource( "Unity","Ivan");
+            //StudentsRepository.InitializedData();
+            //StudentsRepository.GetStudentScoresFromCource( "Unity","Ivan");
+            //IOManager.ChangeCurrentDirectoryAbsolute(@"C:\");
+            //IOManager.TraverseDirectory(0);
+
+            //InputReader.StartReadingCommands();
+
+            InputReader.StartReadingCommands();
+
         }
     }
 }
