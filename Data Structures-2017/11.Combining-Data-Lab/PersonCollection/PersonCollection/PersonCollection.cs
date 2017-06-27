@@ -33,66 +33,17 @@ public class PersonCollection : IPersonCollection
 
         var emailDomain = this.ExtractEmailDomain(email);
 
-        if (!personsByEmailDomain.ContainsKey(emailDomain))
-        {
-            var newSet = new SortedSet<Person>();
-
-            newSet.Add(person);
-
-            this.personsByEmailDomain.Add(emailDomain, newSet);
-        }
-        else
-        {
-            this.personsByEmailDomain[emailDomain].Add(person);
-        }
-
+        this.personsByEmailDomain.AppendValueToKey(emailDomain, person);
 
         var nameAndTown = this.CombineNameAndTown(name, town);
 
-        if (!personsByNameAndTown.ContainsKey(nameAndTown))
-        {
-            var newSet = new SortedSet<Person>();
+        this.personsByNameAndTown.AppendValueToKey(nameAndTown, person);
 
-            newSet.Add(person);
-
-            this.personsByNameAndTown.Add(nameAndTown, newSet);
-        }
-        else
-        {
-            this.personsByNameAndTown[nameAndTown].Add(person);
-        }
-
-        if (!personsByAge.ContainsKey(age))
-        {
-            var newSet = new SortedSet<Person>();
-
-            newSet.Add(person);
-
-            this.personsByAge.Add(age, newSet);
-
-        }
-        else
-        {
-            this.personsByAge[age].Add(person);
-        }
-
+        this.personsByAge.AppendValueToKey(age, person);
 
         this.personsByTownAndAge.EnsureKeyExists(town);
 
-        if (!personsByTownAndAge[town].ContainsKey(age))
-        {
-            var newSet = new SortedSet<Person>();
-
-            newSet.Add(person);
-
-            this.personsByTownAndAge[town].Add(age, newSet);
-
-        }
-        else
-        {
-            this.personsByTownAndAge[town][age].Add(person);
-        }
-
+        this.personsByTownAndAge[town].AppendValueToKey(age, person);
 
         return true;
 
