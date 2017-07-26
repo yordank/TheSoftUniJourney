@@ -15,8 +15,8 @@ class Program
 
         for (int i = 0; i < n; i++)
         {
-            string str = Console.ReadLine();
-            Box<string> box = new Box<string>(str);
+            int num = int.Parse(Console.ReadLine());
+            Box<int> box = new Box<int>(num);
             sb.AppendLine(box.ToString());
         }
 
