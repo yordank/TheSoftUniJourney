@@ -78,9 +78,9 @@ namespace BashSoft.Models
             return mark;
         }
 
-        public int CompareTo(IStudent other)
-        {
-            throw new NotImplementedException();
-        }
+        public int CompareTo(IStudent other) => this.Username.CompareTo(other.Username);
+
+        public override string ToString() => this.Username;
+
     }
 }

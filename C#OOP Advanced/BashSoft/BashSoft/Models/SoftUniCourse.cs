@@ -49,9 +49,9 @@ namespace BashSoft.Models
             this.studentsByName.Add(student.Username, student);
         }
 
-        public int CompareTo(ICourse other)
-        {
-            throw new System.NotImplementedException();
-        }
+        public int CompareTo(ICourse other) => this.Name.CompareTo(other.Name);
+
+        public override string ToString() => this.Name;
+
     }
 }
