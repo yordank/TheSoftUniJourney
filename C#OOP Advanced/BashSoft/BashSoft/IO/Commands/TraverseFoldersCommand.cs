@@ -1,4 +1,5 @@
 ﻿using BashSoft.Contracts;
+using BashSoft.Contracts.Repository;
 
 namespace BashSoft.IO.Commands
 {
@@ -7,7 +8,7 @@ namespace BashSoft.IO.Commands
 
     public class TraverseFoldersCommand : Command
     {
-        public TraverseFoldersCommand(string input, string[] data, Tester judge, StudentsRepository repository,
+        public TraverseFoldersCommand(string input, string[] data, IContentComparer judge, IDatabase repository,
             IDirectoryManager inputOutputManager) : base(input, data, judge, repository, inputOutputManager) {}
 
         public override void Execute()

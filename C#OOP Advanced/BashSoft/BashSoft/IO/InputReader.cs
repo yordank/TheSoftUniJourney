@@ -4,7 +4,7 @@ namespace BashSoft
 {
     using System;
 
-    public class InputReader
+    public class InputReader: IReader
     {
         private const string endCommand = "quit";
 

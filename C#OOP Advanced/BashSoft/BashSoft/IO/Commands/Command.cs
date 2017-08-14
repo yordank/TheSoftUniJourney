@@ -1,4 +1,5 @@
 ﻿using BashSoft.Contracts;
+using BashSoft.Contracts.Repository;
 
 namespace BashSoft.IO.Commands
 {
@@ -10,11 +11,11 @@ namespace BashSoft.IO.Commands
         private string input;
         private string[] data;
 
-        private Tester judge;
-        private StudentsRepository repository;
+        private IContentComparer judge;
+        private IDatabase repository;
         private IDirectoryManager inputOutputManager;
 
-        public Command(string input, string[] data, Tester judge, StudentsRepository repository, IDirectoryManager inputOutputManager)
+        public Command(string input, string[] data, IContentComparer judge, IDatabase repository, IDirectoryManager inputOutputManager)
         {
             this.Input = input;
             this.Data = data;
@@ -49,12 +50,12 @@ namespace BashSoft.IO.Commands
             }
         }
 
-        protected Tester Judge
+        protected IContentComparer Judge
         {
             get { return this.judge; }
         }
 
-        protected StudentsRepository Repository
+        protected IDatabase Repository
         {
             get { return this.repository; }
         }
