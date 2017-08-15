@@ -1,8 +1,9 @@
 ﻿using BashSoft.Contracts;
+using BashSoft.Contracts.Repository;
 
 namespace BashSoft
 {
-    using BashSoft.Contracts.Repository;
+	
 
     public class Launcher
     {
@@ -17,7 +18,7 @@ namespace BashSoft
 
             reader.StartReadingCommands();
 
-            //test github
+            //test github1912
         }
     }
 }
