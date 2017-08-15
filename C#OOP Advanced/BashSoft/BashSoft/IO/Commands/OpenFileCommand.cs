@@ -4,11 +4,14 @@ using BashSoft.Contracts.Repository;
 namespace BashSoft.IO.Commands
 {
     using System.Diagnostics;
+    using BashSoft.Attributes;
     using Execptions;
 
+    [Alias("open")]
     public class OpenFileCommand : Command
     {
-        public OpenFileCommand(string input, string[] data, IContentComparer judge,IDatabase repository, IDirectoryManager inputOutputManager) : base(input, data, judge, repository, inputOutputManager)
+        public OpenFileCommand(string input, string[] data) 
+            : base(input, data)
         {
             
         }

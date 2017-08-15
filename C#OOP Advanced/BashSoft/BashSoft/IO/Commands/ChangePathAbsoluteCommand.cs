@@ -3,12 +3,17 @@ using BashSoft.Contracts.Repository;
 
 namespace BashSoft.IO.Commands
 {
+    using BashSoft.Attributes;
     using Execptions;
 
+    [Alias("cdAbs")]
     public class ChangePathAbsoluteCommand : Command
     {
-        public ChangePathAbsoluteCommand(string input, string[] data, IContentComparer judge, IDatabase repository,
-            IDirectoryManager inputOutputManager) : base(input, data, judge, repository, inputOutputManager) { }
+        [Inject]
+        private IDirectoryManager InputOutputManager;
+
+        public ChangePathAbsoluteCommand(string input, string[] data)
+            : base(input, data) { }
 
         public override void Execute()
         {

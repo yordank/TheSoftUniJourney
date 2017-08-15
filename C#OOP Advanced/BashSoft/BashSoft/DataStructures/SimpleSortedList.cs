@@ -35,10 +35,48 @@ public class SimpleSortedList<T> : ISimpleOrderedBag<T>
     {
     }
 
+    public bool Remove(T element)
+    {
+        bool hasBeenRemoved = false;
+        int indexOfRemovedElement = 0;
+
+        for (int i = 0; i < this.Size; i++)
+        {
+            if (this.innearCollection[i].Equals(element))
+            {
+                indexOfRemovedElement = i;
+                this.innearCollection[i] = default(T);
+                hasBeenRemoved = true;
+                break;
+            }
+        }
+
+        if (hasBeenRemoved)
+        {
+            for (int i = indexOfRemovedElement; i < this.Size-1; i++)
+            {
+                this.innearCollection[i] = this.innearCollection[i + 1];
+            }
+
+            this.innearCollection[this.size - 1] = default(T);
+        }
+
+        return hasBeenRemoved;
+
+    }
+
+    public int Capacity {
+        get { return this.innearCollection.Length; }
+    }
     public int Size => this.size;
 
     public void Add(T element)
     {
+        if (element == null)
+        {
+            throw new ArgumentException();
+        }
+
         if (this.innearCollection.Length == this.Size)
         {
             this.Resize();
