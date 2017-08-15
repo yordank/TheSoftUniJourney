@@ -15,6 +15,8 @@ namespace BashSoft
             IReader reader =  new InputReader(currentInterpreter);
 
             reader.StartReadingCommands();
+
+            //test github
         }
     }
 }
