@@ -37,6 +37,11 @@ public class SimpleSortedList<T> : ISimpleOrderedBag<T>
 
     public bool Remove(T element)
     {
+        if (element == null)
+        {
+            throw new ArgumentException();
+        }
+
         bool hasBeenRemoved = false;
         int indexOfRemovedElement = 0;
 
@@ -59,6 +64,8 @@ public class SimpleSortedList<T> : ISimpleOrderedBag<T>
             }
 
             this.innearCollection[this.size - 1] = default(T);
+
+            this.size--;
         }
 
         return hasBeenRemoved;
@@ -89,6 +96,11 @@ public class SimpleSortedList<T> : ISimpleOrderedBag<T>
 
     public void AddAll(ICollection<T> collection)
     {
+        if (collection == null)
+        {
+            throw new ArgumentException();
+        }
+
         if (this.Size + collection.Count >= this.innearCollection.Length)
         {
             this.Multiresize(collection);
@@ -105,6 +117,11 @@ public class SimpleSortedList<T> : ISimpleOrderedBag<T>
 
     public string JoinWith(string joiner)
     {
+        if (joiner == null)
+        {
+            throw new ArgumentException();
+        }
+
         StringBuilder builder = new StringBuilder();
 
         foreach (var element in this)
@@ -135,6 +152,7 @@ public class SimpleSortedList<T> : ISimpleOrderedBag<T>
     {
         T[] newCollection = new T[this.Size * 2];
         Array.Copy(this.innearCollection, newCollection, this.Size);
+        this.innearCollection = newCollection;
     }
 
     private void Multiresize(ICollection<T> collection)
