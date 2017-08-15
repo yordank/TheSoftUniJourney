@@ -1,8 +1,9 @@
 ﻿using BashSoft.Contracts;
-using BashSoft.Contracts.Repository;
 
 namespace BashSoft
 {
+    using BashSoft.Contracts.Repository;
+
     public class Launcher
     {
         public static void Main()
